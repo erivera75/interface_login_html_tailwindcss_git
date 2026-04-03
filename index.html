@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Iniciar Sesión</title>
 </head>
-<body>
-    <h1>Entendiendo Ramas (bransh) en git</h1>
-    
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-gray-800">Bienvenido</h2>
+            <p class="text-gray-500">Ingresa tus credenciales para acceder</p>
+        </div>
+
+        <form action="#" method="POST" class="space-y-6">
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required 
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-200"
+                    placeholder="ejemplo@correo.com">
+            </div>
+
+            <div>
+                <div class="flex justify-between">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Contraseña</label>
+                    <a href="#" class="text-sm text-blue-600 hover:underline">¿Olvidaste tu contraseña?</a>
+                </div>
+                <input type="password" id="password" name="password" required 
+                    class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 outline-none transition duration-200"
+                    placeholder="••••••••">
+            </div>
+
+            <div class="flex items-center">
+                <input type="checkbox" id="remember" class="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                <label for="remember" class="ml-2 block text-sm text-gray-900">Recordar sesión</label>
+            </div>
+
+            <button type="submit" 
+                class="w-full bg-blue-600 text-white py-2 px-4 rounded-md font-semibold hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300">
+                Iniciar Sesión
+            </button>
+        </form>
+
+        <p class="mt-8 text-center text-sm text-gray-600">
+            ¿No tienes cuenta? 
+            <a href="#" class="font-medium text-blue-600 hover:underline">Regístrate aquí</a>
+        </p>
+    </div>
+
 </body>
 </html>
